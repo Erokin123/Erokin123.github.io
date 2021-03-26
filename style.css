@@ -115,6 +115,12 @@ color: white;
 .mobile-menu{
   display: none;
 }
+.gallery_list{
+  margin-top: 100px;
+}
+.gallery_item img{
+  margin: 0 auto;
+}
 
 @media only screen and (max-width:768px){/*485px МЕНЮ БУРГЕР*/ 
   .mobile-menu {
@@ -124,11 +130,12 @@ color: white;
     justify-content: flex-end;
     padding: 0 16px;
     top: 0;
-    background-color: #27ae60;
+    background-color: #dc8400;
+    width: 70px;
     left: 0;
-    right: 0;
     height: 50px;
-    z-index: 9999999;
+    z-index: 99999999;
+  
   }
   .mobile-menu__btn {
     position: relative;
@@ -137,8 +144,9 @@ color: white;
     justify-content: center;
     width: 35px;
     height: 30px;
-    cursor: pointer;
-    transition: .4s;
+    cursor: pointer;position: fixed;
+    display: flex;
+    align-items: center;
   }
   .mobile-menu__icon {
     display: block;
@@ -170,14 +178,14 @@ color: white;
     align-items: center;
     justify-content: center;
     top: 50px;
-    left: 0;
+    left: 0px;
     right: 0;
     z-index: 999;
     height: 0;
     opacity: 1;
     transition: .5s;
     overflow: hidden;
-    background-color: #27ae60;
+    background-color: #2a2b5c;
   }
   .mobile-menu__list {
     transition: .5s;
